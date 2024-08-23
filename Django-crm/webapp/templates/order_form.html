@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card card-body">
+        <form action="" method="POST">
+          {% csrf_token %}
+          {{ formset.management_form }}
+          {% for field in formset %}
+            {{field.label}} : 
+            {{field}}
+            <hr>
+          {% endfor %}
+
+          {% comment %}form.as_p render form as paragraph{% endcomment %}
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
