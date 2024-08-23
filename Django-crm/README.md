@@ -38,8 +38,8 @@ It is a Customer Relationship Management (CRM) application built with Django. Th
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/sag-dhruv/todo_django.git
-cd todo_django
+git clone https://github.com/sag-dhruv/Django.git
+cd Django-crm
 ```
 
 2. Create a virtual environment (optional but recommended):
